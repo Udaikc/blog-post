@@ -16,7 +16,7 @@ export default function LatestPosts() {
                 })
                     .map((post) => (
                         <article className="text-wrap max-w-md my-10" key={post.slug}>
-                            <Link href={`/blog/${post.slug}`}>
+                            <Link href={`${post.slug}`}>
                                 <h1 className="text-blog py-2 leading-5 hover:text-blue-500">
                                     {post.metadata.title}
                                 </h1>
